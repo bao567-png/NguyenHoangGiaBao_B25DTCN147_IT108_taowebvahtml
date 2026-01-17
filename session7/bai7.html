@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Phòng Khám Nha Khoa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f7;
+        }
+
+        .form-container {
+            width: 500px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px auto;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            color: #0b7c75;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #9aaad1;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #14a3a0;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0f8f8c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Biểu Mẫu Feedback Phòng Khám Nha Khoa</h1>
+
+    <form>
+        <label>Họ và tên</label>
+        <input type="text" placeholder="Nhập họ tên">
+
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com">
+
+        <label>Dịch vụ đã sử dụng</label>
+        <select>
+            <option>Khám răng tổng quát</option>
+            <option>Tẩy trắng răng</option>
+            <option>Niềng răng</option>
+            <option>Trám răng</option>
+        </select>
+
+        <label>Mức độ hài lòng</label>
+        <select>
+            <option>Rất hài lòng</option>
+            <option>Hài lòng</option>
+            <option>Bình thường</option>
+            <option>Không hài lòng</option>
+        </select>
+
+        <label>Nội dung phản hồi</label>
+        <textarea placeholder="Hãy cho chúng tôi biết cảm nhận của bạn..."></textarea>
+
+        <button type="submit">Gửi feedback</button>
+    </form>
+</div>
+
+</body>
+</html>

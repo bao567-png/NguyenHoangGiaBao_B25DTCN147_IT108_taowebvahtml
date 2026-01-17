@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nha Khoa Dental Care</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #0173d9;
+      text-align: center;
+      min-height: 150px;
+    }
+
+    header h1 {
+      color: white;
+      padding-top: 24px;
+    }
+
+    header nav {
+      padding: 24px 0;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: white;
+      background-color: #3693ef;
+      padding: 14px 20px;
+      margin: 0 15px;
+      border-radius: 25px;
+      display: inline-block;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    header nav a:hover {
+      background-color: white;
+      color: #0173d9;
+      transform: translateY(-5px);
+    }
+
+    /* SESSION 1 */
+    .session1 {
+      height: 500px;
+      background-image: url("index.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+    }
+
+    .session1 div {
+      padding-top: 180px;
+    }
+
+    .session1 h2 {
+      font-size: 60px;
+      font-family: serif;
+    }
+
+    .session1 p {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+
+    .session1 button {
+      padding: 18px 40px;
+      border-radius: 25px;
+      border: none;
+      background-color: white;
+      color: #0169cf;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* SESSION 3 */
+    .session3 {
+      background-color: #eef6ff;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .session3 h2 {
+      color: #0166cc;
+      font-size: 48px;
+    }
+
+    .bd-blue {
+      width: 100px;
+      border-bottom: 3px solid blue;
+      margin: 20px auto;
+    }
+
+    .session3 table {
+      width: 80%;
+      margin: auto;
+      border-spacing: 0;
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .session3 th {
+      background-color: #0272d8;
+      color: white;
+      padding: 16px;
+    }
+
+    .session3 td {
+      padding: 14px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .session3 td:last-child {
+      color: #0166cc;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      background-color: #f0f2f4;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Nha Khoa Dental Care</h1>
+    <nav>
+      <a href="#">Trang chủ</a>
+      <a href="#">Giới thiệu</a>
+      <a href="#dichvu">Liên hệ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="session1">
+      <div>
+        <h2>Chăm sóc nụ cười của bạn</h2>
+        <p>Dịch vụ nha khoa chuyên nghiệp – Bác sĩ giàu kinh nghiệm</p>
+        <button>Xem dịch vụ</button>
+      </div>
+    </section>
+
+    <section class="session3" id="dichvu">
+      <h2>Dịch vụ nha khoa</h2>
+      <div class="bd-blue"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Tên dịch vụ</th>
+            <th>Mô tả</th>
+            <th>Giá từ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Tẩy trắng răng</td>
+            <td>Làm trắng răng an toàn, hiệu quả</td>
+            <td>1.500.000đ</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Niềng răng</td>
+            <td>Chỉnh nha thẩm mỹ hiện đại</td>
+            <td>15.000.000đ</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Trồng răng Implant</td>
+            <td>Cấy ghép Implant bền vững</td>
+            <td>12.000.000đ</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Nha Khoa Dental Care. All rights reserved.</p>
+  </footer>
+</body>
+</html>
