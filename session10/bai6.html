@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Gourmet Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f5f2;
+    color: #333;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    padding: 15px 30px;
+}
+
+.header nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    padding: 30px;
+}
+
+
+.featured {
+    flex: 1 1 350px;
+}
+
+.featured-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.featured-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #c9a14a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+.posts {
+    flex: 1 1 300px;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.post-item h4 {
+    margin: 0 0 5px;
+}
+
+
+.footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+}
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>Gourmet Insights</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+
+
+    <section class="featured">
+        <h2>Bài Viết Nổi Bật</h2>
+
+        <div class="featured-card">
+            <img src="hamburger.webp" alt="">
+            <h3>Nghệ Thuật Plating Trong Fine Dining</h3>
+            <p>
+                Plating không chỉ là cách bày trí món ăn mà còn là nghệ thuật
+                truyền tải cảm xúc và đẳng cấp của ẩm thực cao cấp.
+            </p>
+            <a href="" class="btn">Đọc thêm</a>
+        </div>
+    </section>
+
+    <section class="posts">
+        <h2>Các Bài Viết Khác</h2>
+
+        <div class="post-list">
+            <div class="post-item">
+                <h4>Bí Quyết Chọn Nguyên Liệu Cao Cấp</h4>
+                <p>Nguyên liệu tươi ngon là nền tảng của mọi món ăn Fine Dining.</p>
+            </div>
+
+            <div class="post-item">
+                <h4>Xu Hướng Ẩm Thực 2025</h4>
+                <p>Khám phá những xu hướng mới trong thế giới F&B cao cấp.</p>
+            </div>
+
+            <div class="post-item">
+                <h4>Hành Trình Của Một Đầu Bếp Michelin</h4>
+                <p>Câu chuyện phía sau những ngôi sao Michelin danh giá.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    © 2025 Gourmet Insights. All rights reserved.
+</footer>
+
+</body>
+</html>
