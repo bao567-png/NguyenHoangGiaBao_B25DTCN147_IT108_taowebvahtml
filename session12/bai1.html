@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header{
+        background-color: aliceblue;
+        border-bottom: 1px solid #eee;
+    }
+    .container {
+    max-width: 1200px;
+    margin: 10px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo{
+        font-size: 20px;
+        font-weight: bold;
+        color: #6366f1;
+        align-items: center;
+        display: flex;
+    }
+    .logo .icon{
+        margin-right: 8px;
+    }
+    .nav a{
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+        margin: 12px;
+    }
+    .nav a:hover {
+  color: #6366f1;
+}
+.nav {
+  display: flex;
+  gap: 24px;
+}
+.btn {
+  background: #3b82f6;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 992px) {
+  .nav {
+    gap: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+</style>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="icon">📘 </span>
+                <span>Edulearn</span>
+            </div>
+        <nav class="nav">
+            <a href="">Trang chủ</a>
+            <a href="">Tính năng</a>
+            <a href="">Khóa học</a>
+            <a href="">Đánh giá</a>
+            <a href="">Bảng giá</a>
+            <a href="">FAQ</a>
+        </nav>
+       
+            <a href="" class="btn">Bắt đầu ngay</a>
+
+       
+
+        </div>
+
+    </header>
+</body>
+</html>

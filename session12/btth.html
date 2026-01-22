@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elearning</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+header{
+    height:62px;
+    background:#0c64e4;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15%;
+}
+
+.top-search-box{
+    padding:8px 125px;
+    border-radius:30px;
+    border:none;
+    background:#3d84ed;
+}
+
+.top-search-box:focus{
+    outline:none;
+}
+
+header nav{
+    display:flex;
+    gap:15px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:900;
+}
+
+.top-menu-icon{
+    display:none;
+    font-size:28px;
+}
+
+main{
+    background:#f4f7fc;
+    padding:32px 0;
+}
+
+
+.dash-overview{
+    background:white;
+    width:75%;
+    height:110px;
+    margin-left:280px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:36px 32px;
+    border-radius:15px;
+    box-shadow:0 8px 30px rgba(0,0,0,.15);
+}
+
+.overview-item p{
+    font-size:14px;
+}
+
+.progress-track{
+    width:160px;
+    height:10px;
+    background:#e9ecef;
+    border-radius:5px;
+}
+
+.progress-current{
+    height:10px;
+    background:#3d84ed;
+    border-radius:5px 0 0 5px;
+}
+
+
+.learn-area{
+    width:75%;
+    margin-left:280px;
+    margin-top:32px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.learn-area h2{
+    color:#0c64e4;
+}
+
+.learn-row-active,
+.learn-row-suggest{
+    display:flex;
+    justify-content:space-between;
+    gap:23px;
+}
+
+.learn-card{
+    width:32%;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 8px 30px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.learn-card:hover{
+    transform:translateY(-8px);
+}
+
+.learn-card img{
+    width:100%;
+    height:156px;
+    border-radius:10px 10px 0 0;
+}
+
+.learn-card-body{
+    padding:30px 20px;
+}
+
+.learn-card-body p{
+    color:#7b7b7a;
+    margin-bottom:20px;
+}
+
+.learn-card-body a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:40px;
+    background:#0c64e4;
+    color:white;
+    font-weight:bold;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+.learn-row-suggest .learn-card{
+    width:49%;
+}
+
+
+@media (max-width:1268px){
+    .dash-overview,
+    .learn-area{
+        width:90%;
+        margin-left:30px;
+    }
+}
+
+@media (max-width:950px){
+    .learn-row-active,
+    .learn-row-suggest{
+        flex-wrap:wrap;
+    }
+
+    .learn-card{
+        width:48%;
+    }
+}
+
+@media (max-width:750px){
+    .learn-card{
+        width:100%;
+    }
+
+    header nav,
+    .top-search-box{
+        display:none;
+    }
+
+    .top-menu-icon{
+        display:block;
+    }
+
+    header{
+        gap:70%;
+        padding:0 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Elearning</h1>
+    <input class="top-search-box" placeholder="Tìm khóa học">
+    <nav>
+        <a href="">Khóa học</a>
+        <a href="">Tiến độ</a>
+        <a href="">Hồ sơ</a>
+    </nav>
+    <div class="top-menu-icon">☰</div>
+</header>
+
+<main>
+<section class="dash-overview">
+    <div class="overview-item">
+        <h2>Xin chào, Bạn tôi!</h2>
+        <p>Chúc bạn học tập hiệu quả hôm nay</p>
+    </div>
+
+    <div class="overview-item">
+        <p>Tiến độ tổng: 68%</p>
+        <div class="progress-track">
+            <div class="progress-current" style="width:68%"></div>
+        </div>
+    </div>
+</section>
+
+<section class="learn-area">
+    <h2>Khóa học đang học</h2>
+    <div class="learn-row-active">
+        <div class="learn-card">
+            <img src="Screenshot 2026-01-22 091127.png">
+            <div class="learn-card-body">
+                <h4>CSS Flexbox & Grid</h4>
+                <p>Hoàn thành: 60%</p>
+                <a href="">Tiếp tục học</a>
+            </div>
+        </div>
+
+        <div class="learn-card">
+            <img src="Screenshot 2026-01-22 091338.png">
+            <div class="learn-card-body">
+                <h4>JavaScript Cơ bản</h4>
+                <p>Hoàn thành: 50%</p>
+                <a href="">Tiếp tục học</a>
+            </div>
+        </div>
+
+        <div class="learn-card">
+            <img src="Screenshot 2026-01-22 091408.png">
+            <div class="learn-card-body">
+                <h4>Responsive Web</h4>
+                <p>Hoàn thành: 60%</p>
+                <a href="#">Tiếp tục học</a>
+            </div>
+        </div>
+    </div>
+
+    <h2>Khóa học gợi ý</h2>
+    <div class="learn-row-suggest">
+        <div class="learn-card">
+            <img src="Screenshot 2026-01-22 091511.png">
+            <div class="learn-card-body">
+                <h4>UI/UX Design</h4>
+                <p>Bắt đầu ngay hôm nay</p>
+                <a href="#">Tiếp tục học</a>
+            </div>
+        </div>
+
+        <div class="learn-card">
+            <img src="Screenshot 2026-01-22 091537.png">
+            <div class="learn-card-body">
+                <h4>HTML nâng cao</h4>
+                <p>Phù hợp Beginer</p>
+                <a href="#">Tiếp tục học</a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+</body>
+</html>
