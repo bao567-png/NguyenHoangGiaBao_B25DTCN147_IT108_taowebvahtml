@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Đăng nhập</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+
+.form-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.login-form {
+  width: 600px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #1a73e8;
+}
+
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 20px;
+  font-size: 14px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.forgot {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1558b0;
+}
+
+
+.register-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-text a {
+  color: #1a73e8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+  .login-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="form-wrapper">
+    <form class="login-form">
+      <h2>Đăng nhập</h2>
+      <p class="subtitle">
+        Đăng nhập để sử dụng hệ thống e-learning
+      </p>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Nhập địa chỉ email" />
+      </div>
+
+      <div class="form-group">
+        <label>Mật khẩu</label>
+        <input type="password" placeholder="Nhập mật khẩu" />
+      </div>
+
+      <div class="options">
+        <label class="remember">
+          <input type="checkbox" />
+          Ghi nhớ đăng nhập
+        </label>
+        <a href="#" class="forgot">Quên mật khẩu?</a>
+      </div>
+
+      <button type="submit">Đăng nhập</button>
+
+      <p class="register-text">
+        Chưa có tài khoản? <a href="#">Đăng ký ngay</a>
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>

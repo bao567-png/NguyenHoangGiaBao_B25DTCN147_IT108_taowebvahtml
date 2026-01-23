@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab khóa học</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+
+.banner {
+  background: #5b5ff0;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+.tabs-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.tabs {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #5b5ff0;
+  color: #fff;
+  border-color: #5b5ff0;
+}
+
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 40px 15px;
+  }
+
+  .banner h1 {
+    font-size: 26px;
+  }
+
+  .tabs {
+    justify-content: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+
+<section class="banner">
+  <h1>Khóa Học Của Tôi</h1>
+  <p>Tiếp tục hành trình học tập và phát triển kỹ năng của bạn</p>
+</section>
+
+
+<section class="tabs-wrapper">
+  <div class="tabs">
+    <button class="tab active">Tất cả khóa học (4)</button>
+    <button class="tab">Đang học (2)</button>
+    <button class="tab">Hoàn thành (1)</button>
+    <button class="tab">Đã lưu (1)</button>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Header & Banner</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+
+.header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.header-content {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.nav a.active {
+  color: #5b5ff0;
+  font-weight: 600;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+
+.mobile-menu a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.mobile-menu a.active {
+  color: #5b5ff0;
+  font-weight: 600;
+}
+
+.mobile-user {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mobile-user img {
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+
+
+.banner {
+  background: #5b5ff0;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+  .nav,
+  .user {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .banner h1 {
+    font-size: 26px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+
+<header class="header">
+  <div class="container header-content">
+    <div class="logo">
+      <img src="https://via.placeholder.com/120x40?text=RKEdu" alt="Logo">
+    </div>
+
+    <nav class="nav">
+      <a href="#">Trang chủ</a>
+      <a href="#">Khóa học</a>
+      <a href="#" class="active">Khóa học của tôi</a>
+      <a href="#">Liên hệ</a>
+    </nav>
+
+    <div class="user">
+      <img src="https://via.placeholder.com/36" alt="Avatar">
+      <span>Nguyễn Văn A</span>
+    </div>
+
+
+    <div class="menu-toggle">☰</div>
+  </div>
+
+
+  <div class="mobile-menu">
+    <a href="#">Trang chủ</a>
+    <a href="#">Khóa học</a>
+    <a href="#" class="active">Khóa học của tôi</a>
+    <a href="#">Liên hệ</a>
+
+    <div class="mobile-user">
+      <img src="https://via.placeholder.com/48" alt="">
+      <p>Nguyễn Văn A</p>
+    </div>
+  </div>
+</header>
+
+
+<section class="banner">
+  <h1>Khóa Học Của Tôi</h1>
+  <p>Tiếp tục hành trình học tập và phát triển kỹ năng của bạn</p>
+</section>
+
+</body>
+</html>
