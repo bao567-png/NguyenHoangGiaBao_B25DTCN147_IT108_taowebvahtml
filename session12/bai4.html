@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .footer{
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #cbd5f5;
+  padding: 60px 20px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-col{
+  min-width: 180px;
+}
+
+.footer-col h3,
+.footer-col h4{
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.logo{
+  font-size: 22px;
+  color: #6366f1;
+}
+
+.footer-col p{
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.footer-col ul{
+  list-style: none;
+}
+
+.footer-col ul li{
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-col ul li:hover{
+  color: #818cf8;
+}
+
+
+.social{
+  display: flex;
+  gap: 12px;
+}
+
+.social a{
+  width: 34px;
+  height: 34px;
+  background: #1e293b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+.footer-bottom{
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #1e293b;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+@media (max-width: 768px){
+  .footer-container{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-bottom{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3 class="logo">EduLearn</h3>
+      <p>
+        Nền tảng học trực tuyến hàng đầu, mang đến trải nghiệm
+        học tập tốt nhất cho mọi người.
+      </p>
+
+      <div class="social">
+        <a href="#">🐦</a>
+        <a href="#">📘</a>
+        <a href="#">💼</a>
+        <a href="#">📸</a>
+      </div>
+    </div>
+
+
+    <div class="footer-col">
+      <h4>Khóa học</h4>
+      <ul>
+        <li>Lập trình</li>
+        <li>Thiết kế</li>
+        <li>Marketing</li>
+        <li>Kinh doanh</li>
+        <li>Ngoại ngữ</li>
+      </ul>
+    </div>
+
+
+    <div class="footer-col">
+      <h4>Về chúng tôi</h4>
+      <ul>
+        <li>Giới thiệu</li>
+        <li>Đội ngũ</li>
+        <li>Sự nghiệp</li>
+        <li>Blog</li>
+        <li>Liên hệ</li>
+      </ul>
+    </div>
+
+
+    <div class="footer-col">
+      <h4>Hỗ trợ</h4>
+      <ul>
+        <li>Trung tâm trợ giúp</li>
+        <li>FAQ</li>
+        <li>Chính sách</li>
+        <li>Điều khoản</li>
+        <li>Bảo mật</li>
+      </ul>
+    </div>
+
+
+    <div class="footer-col">
+      <h4>Liên hệ</h4>
+      <ul>
+        <li>📧 info@edulearn.vn</li>
+        <li>📞 1900 1234</li>
+        <li>📍 Hà Nội, Việt Nam</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 EduLearn. Tất cả quyền được bảo lưu.</span>
+    <span>Được thiết kế với ❤️ bởi EduLearn Team</span>
+  </div>
+</footer>
+
+</body>
+</html>

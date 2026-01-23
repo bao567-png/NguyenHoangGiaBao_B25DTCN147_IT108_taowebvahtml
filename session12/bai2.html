@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.course-card{
+  width: 320px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.card-header{
+  height: 160px;
+  background: linear-gradient(135deg, #6b7cff, #7b5cf0);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header .icon{
+  font-size: 48px;
+  color: #fff;
+}
+
+.hot{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.card-body{
+  padding: 18px;
+}
+
+.top-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tag{
+  font-size: 12px;
+  color: #5b5ff0;
+  background: #eef0ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.rating{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.desc{
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.meta{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 14px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price{
+  font-size: 18px;
+  font-weight: bold;
+  color: #5b5ff0;
+}
+
+.btn{
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
+
+    </style>
+</head>
+<body>
+    <div class="course-card">
+  <div class="card-header">
+    <span class="hot">Bán chạy</span>
+    <div class="icon">&lt;/&gt;</div>
+  </div>
+
+  <div class="card-body">
+    <div class="top-row">
+      <span class="tag">Lập trình</span>
+      <span class="rating">⭐ 4.9</span>
+    </div>
+
+    <h3>Lập trình Web Full Stack</h3>
+    <p class="desc">
+      Học lập trình web từ cơ bản đến nâng cao với các công nghệ hiện đại nhất
+    </p>
+
+    <div class="meta">
+      <span>⏱ 40 giờ</span>
+      <span>👥 12K+ học viên</span>
+    </div>
+
+    <div class="bottom">
+      <span class="price">2.990.000đ</span>
+      <button class="btn">Xem chi tiết</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
